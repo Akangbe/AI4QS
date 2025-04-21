@@ -2,7 +2,6 @@ import { ArrowRight, Calendar, Clock, MapPin, Users, ExternalLink } from 'lucide
 import { Button } from '@/components/ui/button';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import Event from '../assets/images/Events.jpg';
-import AI4QSIMG from '../assets/images/AI4QSIMG.png';
 import { Link } from 'react-router-dom';
 
 const EventPage = () => {
