@@ -3,7 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import { Card, CardContent } from '@/components/ui/card';
-import AI4QS from '../assets/images/AI4QSIMG.png';
+// import AI4QS from '../Assets/images/AI4QSIMG.png';
+import AI4QS from '../Assets/images/AI4QSIMG.png';
 
 const Index = () => {
   const features = [
