@@ -1,0 +1,19 @@
+{
+  "name": "AI4QS - AI Solutions for Quantity Surveying",
+  "short_name": "AI4QS",
+  "icons": [
+    {
+      "src": "/PHOTO-2025-04-15-14-38-52-removebg-preview.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/PHOTO-2025-04-15-14-38-52-removebg-preview.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#6231F4",
+  "background_color": "#ffffff",
+  "display": "standalone"
+} 

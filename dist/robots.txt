@@ -1,0 +1,30 @@
+
+# AI4QS Website Robots.txt
+# Version 1.0 - April 2025
+
+User-agent: *
+Allow: /
+
+# Main sitemap
+Sitemap: https://ai4qs.com/sitemap.xml
+
+# Disallow access to specific folders if needed
+# Disallow: /admin/
+# Disallow: /private/
+
+# Rate limiting for specific crawlers if needed
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 1
+
+User-agent: Slurp
+Crawl-delay: 2
+
+# Social media crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
