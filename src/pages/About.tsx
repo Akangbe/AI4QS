@@ -2,12 +2,13 @@ import { ArrowRight, Award, BarChart2, CheckCircle, ChevronRight, Globe, Lightbu
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import Drsaka from '../Assets/images/Dr-saka.jpg';
-import DrKudirat from '../Assets/images/Dr-Kudirat.jpg';
+import DrKudirat from '../Assets/images/85b8bb9f-f84b-4dbc-bf06-06d88c3699b2.jpg';
 import DrAfolabi from '../Assets/images/Dr-Afolabi.jpg';
 import DrKaren from '../Assets/images/Dr-Karen.jpg';
-import Olayinka from '../Assets/images/Olayinka.jpg';
+import Olayinka from '../Assets/images/PHOTO-2025-04-21-15-50-13.jpg';
 import DrSitsofe from '../Assets/images/Dr-sitsofe.jpg';
 import DrAravinda from '../Assets/images/Dr-Aravinda.jpg';
+import AI4QSMission from '../Assets/images/AI4QS-MISSION.jpg';
 
 const About = () => {
   const teamMembers = [
@@ -110,11 +111,11 @@ const About = () => {
             Our Story
           </div>
           <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-4">
-            About AI4QS
+          AI for Quantity Surveying Practice (AI4QS)
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Transforming quantity surveying through artificial intelligence
-          </p>
+          </p> */}
         </div>
 
         {/* Company Overview */}
@@ -126,8 +127,8 @@ const About = () => {
               className="rounded-xl shadow-lg object-cover w-full h-[400px]"
             />
           </div>
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900">AI for Quantity Surveying Practice (AI4QS)</h2>
+          <div className="space-y-6 text-center text-justify">
+            {/* <h2 className="text-3xl font-bold text-gray-900">AI for Quantity Surveying Practice (AI4QS)</h2> */}
             <p className="text-lg text-gray-600">
             At AI4QS, we are reimagining the future of Quantity Surveying through the transformative lens of Artificial Intelligence.
 AI4QS is a pioneering initiative led by researchers from the University of Westminster and Loughborough University, originating from the ongoing AI Competencies in Construction Project funded by UK Research and Innovation (UKRI) and hosted at the School of Applied Management, University of Westminster
@@ -151,27 +152,33 @@ It's about empowering the Quantity Surveying profession to lead confidently, thi
               <Target className="h-12 w-12 text-primary mb-4" />
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
               <p className="text-gray-700 mb-4">
-                To empower quantity surveyors with cutting-edge AI technology that enhances accuracy, 
-                efficiency, and decision-making capabilities.
-              </p>
+              Driving Innovation in Quantity Surveying practice and education with Artificial Intelligence              </p>
               <p className="text-gray-700">
                 We aim to transform traditional QS practices through intelligent automation, 
                 predictive analytics, and data-driven insights, enabling professionals to focus on 
                 high-value activities while reducing routine tasks.
               </p>
-              <ul className="mt-6 space-y-2">
+              {/* <ul className="mt-6 space-y-2">
                 {["Automate routine QS tasks", "Improve estimation accuracy", "Reduce project risks", "Enhance decision making"].map((item) => (
                   <li key={item} className="flex items-start">
                     <ChevronRight className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
           </div>
-          <div className="bg-primary/5 p-8 rounded-xl relative overflow-hidden">
-            <div className="absolute h-32 w-32 rounded-full bg-primary/10 -bottom-10 -left-10 blur-xl"></div>
-            <div className="relative">
+          <div className="p-8 rounded-xl relative overflow-hidden">
+          <div className="relative">
+            <img 
+              src={AI4QSMission}
+              alt="AI in Quantity Surveying" 
+              className="rounded-xl shadow-lg object-cover  h-[400px]"
+            />
+          </div>
+            {/* <div className="absolute h-32 w-32 rounded-full bg-primary/10 -bottom-10 -left-10 blur-xl"></div> */}
+            
+            {/* <div className="relative">
               <Lightbulb className="h-12 w-12 text-primary mb-4" />
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
               <p className="text-gray-700 mb-4">
@@ -191,7 +198,7 @@ It's about empowering the Quantity Surveying profession to lead confidently, thi
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -226,9 +233,7 @@ It's about empowering the Quantity Surveying profession to lead confidently, thi
               What Guides Us
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Core Values</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              The principles that define our company culture and guide our approach
-            </p>
+            
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value) => (
@@ -249,10 +254,10 @@ It's about empowering the Quantity Surveying profession to lead confidently, thi
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
               Our People
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Leadership Team</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+            {/* <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               The experts behind AI4QS innovation and success
-            </p>
+            </p> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member) => (
@@ -261,7 +266,7 @@ It's about empowering the Quantity Surveying profession to lead confidently, thi
                   <img 
                     src={member.image} 
                     alt={member.name} 
-                    className="w-full h-full object-cover transition-transform hover:scale-105"
+                    className="w-full h-20rem object-cover transition-transform hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
