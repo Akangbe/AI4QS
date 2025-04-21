@@ -7,7 +7,7 @@ const Footer = () => {
     { icon: Facebook, href: 'https://facebook.com/ai4qs', label: 'Facebook' },
     { icon: Instagram, href: 'https://instagram.com/ai4qs', label: 'Instagram' },
     { icon: Twitter, href: 'https://twitter.com/ai4qs', label: 'Twitter' },
-    { icon: Linkedin, href: 'https://linkedin.com/company/ai4qs', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/ai4qs/?viewAsMember=true', label: 'LinkedIn' },
   ];
 
   const quickLinks = [

@@ -26,11 +26,11 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Projects', path: '/services' },
+    { name: 'Project', path: '/services' },
+    {name:"Events",path:"/event"},
     // { name: 'Case Studies', path: '/case-studies' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
-    {name:"Events",path:"/event"},
   ];
 
   return (
@@ -45,7 +45,7 @@ const Navbar = () => {
                 <img 
                   src={companyLogo} 
                   alt="AI4QS Logo" 
-                  className="w-30 h-12 object-contain rounded-md pt-4  transition-all duration-300" 
+                  className="w-32 h-20 object-contain rounded-md pt-4  transition-all duration-300" 
                 />
               </div>
             </Link>
