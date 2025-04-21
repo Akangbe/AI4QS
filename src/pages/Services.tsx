@@ -90,7 +90,7 @@ const Services = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary/5 to-transparent overflow-hidden">
+      {/* <section className="relative py-20 bg-gradient-to-b from-primary/5 to-transparent overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute h-96 w-96 -top-48 -right-48 rounded-full bg-primary/5 blur-3xl opacity-50"></div>
           <div className="absolute h-96 w-96 -bottom-48 -left-48 rounded-full bg-purple-500/5 blur-3xl opacity-50"></div>
@@ -108,16 +108,16 @@ const Services = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Featured Services */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Project Phases            </h2>
+            Project           </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our comprehensive approach to integrating AI in Quantity Surveying
+              Our comprehensive approach to integrating AI in Quantity Surveying Practice and Education
             </p>
           </div>
 
@@ -155,7 +155,7 @@ const Services = () => {
               Our Services and Support
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Comprehensive support solutions to advance AI adoption in Quantity Surveying
+              Comprehensive support solutions to advance AI adoption in Quantity Surveying in Practice and Education
             </p>
           </div>
 
@@ -194,18 +194,18 @@ const Services = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-white mb-6">
-              Ready to Transform Your Practice?
+              Ready to Transform Your Practice and Education?
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
-              Get in touch with our team to learn how AI4QS can revolutionize your quantity surveying workflow.
+              Get in touch with our team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="bg-white hover:bg-gray-50 text-primary">
-                <Link to="/contact">Schedule a Demo</Link>
+                <Link to="/contact">Get in touch</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              {/* <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link to="/case-studies">View Case Studies</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

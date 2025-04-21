@@ -73,16 +73,18 @@ const Index = () => {
                   Next-Gen Quantity Surveying
                 </div>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight leading-tight">
-                  Transform Quantity Surveying
-                  <span className="block text-primary mt-2">With Artificial Intelligence</span>
+                Driving Innovation in Quantity Surveying Practice and
+                  <span className="block text-primary mt-2">Education with Artificial Intelligence
+
+
+</span>
                 </h1>
               </div>
-              <p className="text-xl text-gray-600 max-w-2xl">
-              Driving Innovation in Quantity Surveying practice and education with Artificial Intelligence              </p>
+              {/* <p className="text-xl text-gray-600 max-w-2xl"> */}
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="shadow-lg group">
                   <Link to="/services" className="flex items-center gap-2">
-                    Explore Solutions 
+                    Explore
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
@@ -282,17 +284,13 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
             Ready to transform your quantity surveying practice and education?            </h2>
             <p className="mt-4 text-xl text-white/90 max-w-2xl mx-auto">
-              Join the hundreds of professionals already leveraging AI to streamline their workflows and improve accuracy.
+              Join the hundreds of professionals aiming to leverage AI to streamline their workflows.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="bg-white hover:bg-gray-50 text-primary shadow-lg">
                 <Link to="/services">Get Started Today</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/contact" className="flex items-center gap-2">
-                  Schedule a Demo <ExternalLink className="h-4 w-4" />
-                </Link>
-              </Button>
+             
             </div>
           </div>
         </div>

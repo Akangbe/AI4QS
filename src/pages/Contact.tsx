@@ -83,9 +83,8 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-xl text-gray-600">
-            Have questions about AI4QS? We're here to support your journ
-            ey into AI 
-            implementation for Quantity Surveying practice and education.            </p>
+            Have questions about AI4QS? We're here to support your journey into AI 
+            implementation for Quantity Surveying Practice and Education.            </p>
           </div>
         </div>
       </section>
@@ -106,7 +105,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-medium text-gray-900">Email</h3>
                         <p className="text-gray-600 mt-1">info@ai4qs.com</p>
-                        <p className="text-gray-600">sales@ai4qs.com</p>
+                        <p className="text-gray-600">contact@ai4qs.com</p>
                       </div>
                     </div>
                     
@@ -135,7 +134,7 @@ const Contact = () => {
                       {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
                         <a 
                           key={social} 
-                          href={`https://${social}.com/ai4qs`} 
+                          href="https://www.linkedin.com/company/ai4qs/?viewAsMember=true" 
                           className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -340,7 +339,7 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Quick answers to common questions about our services
+              Quick answers to common questions about AI4QS
             </p>
           </div>
           
@@ -393,15 +392,23 @@ const Contact = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-white mb-6">
-              Ready to See AI4QS in Action?
+              Ready for your AI Journey?
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
-              Schedule a personalized demo to see how our AI solutions can transform your quantity surveying practice.
+Get in touch with our team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    
+
               <Button size="lg" variant="secondary" className="bg-white hover:bg-gray-50 text-primary">
-                <Calendar className="h-5 w-5 mr-2" /> Book a Demo
+              
+
+                <Calendar className="h-5 w-5 mr-2"  /> Get in touch
+
+       
               </Button>
+     
+             
             </div>
           </div>
         </div>
