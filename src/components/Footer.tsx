@@ -65,8 +65,7 @@ const Footer = () => {
    </div>
             </Link>
             <p className="text-gray-600">
-              Empowering quantity surveyors with cutting-edge AI solutions for more accurate estimations and efficient workflows.
-            </p>
+            Driving Innovation in Quantity Surveying practice and education with Artificial Intelligence            </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-gray-600">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-1" />
@@ -172,10 +171,10 @@ const Footer = () => {
             <p className="text-sm text-gray-600">
               © {new Date().getFullYear()} AI4QS. All rights reserved.
             </p>
-            <div className="flex items-center gap-6 text-xs text-gray-500">
+            {/* <div className="flex items-center gap-6 text-xs text-gray-500">
               <span>UK Registered Company: 12345678</span>
               <span>VAT Number: GB123456789</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

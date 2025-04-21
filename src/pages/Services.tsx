@@ -1,91 +1,89 @@
-import { Bot, Calculator, ChartBar, ClipboardCheck, Cloud, Cog, FileText, Layers, PieChart, Shield, Zap, Brain, Database } from 'lucide-react';
+import { Bot, Calculator, ChartBar, ClipboardCheck, Cloud, Cog, FileText, Layers, PieChart, Shield, Zap, Brain, Database, BookOpen, Users, Globe, Server } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Services = () => {
-  const featuredServices = [
+  const projectPhases = [
     {
-      title: "AI-Powered Cost Estimation",
-      description: "Our flagship solution harnesses the power of machine learning to transform how you estimate costs. By analyzing historical data, market trends, and project specifics, our AI delivers unparalleled accuracy.",
+      title: "Phase I: Baseline Research",
+      description: "Laying the foundation for understanding AI in Quantity Surveying practice and education.",
       features: [
-        "Reduce estimation time by up to 60%",
-        "Improve accuracy by 25% on average",
-        "Consider thousands of variables simultaneously",
-        "Learn from your historical project data"
+        "Mapping the current status of AI adoption in Quantity Surveying across academia and industry.",
+        "Identifying key opportunities, benefits, barriers, and skill gaps in AI uptake.",
+        "Conducting surveys, interviews, and focus groups with QS professionals and educators.",
+        "Analysing trends, challenges, and future needs to inform the next phase of the project."
       ],
       icon: Brain,
       color: "from-primary/10 to-primary/5",
       iconColor: "text-primary"
     },
     {
-      title: "Automated Quantity Takeoff",
-      description: "Our computer vision technology automatically extracts accurate measurements and quantities from building plans, BIM models, and even scanned drawings, eliminating tedious manual work.",
+      title: "Phase II: Competency and Education Development",
+      description: "Defining what it means to be an \"AI-Ready QS\" and supporting the evolution of QS education and professional development.",
       features: [
-        "Process complex drawings in minutes",
-        "99.2% accuracy on standard plans",
-        "Supports all common file formats",
-        "Integrates with popular BIM software"
+        "Defining core competencies and skillsets for the AI-literate QS professional.",
+        "Developing a strategic roadmap for integrating AI into QS curricula and industry training.",
+        "Designing draft education modules, CPD programmes, and professional training pathways.",
+        "Engaging with universities, industry partners, and professional bodies to validate and refine proposals."
       ],
-      icon: Bot,
+      icon: BookOpen,
       color: "from-purple-500/10 to-purple-500/5",
       iconColor: "text-purple-500"
     },
     {
-      title: "Predictive Analytics Platform",
-      description: "Transform your data into actionable insights with our predictive analytics platform. Forecast costs, identify trends, and make informed decisions based on comprehensive data analysis.",
+      title: "Phase III: Knowledge Exchange and Industry Engagement",
+      description: "Bridging academia and practice to drive collaborative learning, adoption, and leadership in AI for QS.",
       features: [
-        "Interactive dashboards and visualizations",
-        "Real-time market price integration",
-        "Risk assessment and mitigation tools",
-        "Custom reporting capabilities"
+        "Organising workshops, panels, webinars, and conferences to share project findings.",
+        "Publishing practical guidance, toolkits, and whitepapers for academia and industry.",
+        "Collaborating with RICS, industry leaders, and education providers to align professional standards.",
+        "Building a community of AI4QS Champions to drive future innovation in the sector."
       ],
-      icon: ChartBar,
+      icon: Users,
       color: "from-blue-500/10 to-blue-500/5",
       iconColor: "text-blue-500"
+    },
+    {
+      title: "Phase IV: System Development and Future Delivery",
+      description: "Creating a digital platform to support QS professionals, educators, and organisations on their AI adoption journey.",
+      features: [
+        "Designing and developing the AI4QS Digital Hub to house research outputs, learning resources, and tools.",
+        "Launching a competency framework dashboard and interactive self-assessment tools for QSs.",
+        "Providing on-demand guidance, e-learning modules, and community networking features.",
+        "Establishing AI4QS as an ongoing centre of excellence supporting innovation in QS practice and education."
+      ],
+      icon: Server,
+      color: "from-green-500/10 to-green-500/5",
+      iconColor: "text-green-500"
     }
   ];
 
   const additionalServices = [
     {
-      title: "Smart Document Processing",
-      description: "Extract and process information from construction documents automatically using our AI technology.",
+      title: "Education and Training Development",
+      description: "We design training recommendations and support the integration of AI competencies into Quantity Surveying education. This includes developing short courses, CPD (Continuing Professional Development) programs, and bespoke workshops aimed at upskilling QS educators, students, and industry professionals.",
+      icon: BookOpen,
+    },
+    {
+      title: "Research and Insights",
+      description: "We produce cutting-edge research, toolkits, and whitepapers offering practical guidance on AI adoption in QS practice. Our insights cover ethics, technical frameworks, emerging trends, and sector-specific applications, helping the profession navigate opportunities and challenges with confidence.",
       icon: FileText,
     },
     {
-      title: "Real-time Collaboration",
-      description: "Cloud-based platform for seamless team collaboration and document sharing with powerful version control.",
-      icon: Cloud,
+      title: "Knowledge Exchange and Community Building",
+      description: "We host panels, roundtables, collaborative forums, and workshops to connect academia, industry, and professional bodies. Our knowledge exchange activities foster a vibrant, forward-thinking community committed to advancing AI leadership in Quantity Surveying.",
+      icon: Users,
     },
     {
-      title: "Automated Reporting",
-      description: "Generate comprehensive reports and analyses with just a few clicks in multiple export formats.",
-      icon: ClipboardCheck,
+      title: "Professional Development and Strategic Advice",
+      description: "We advise professional bodies, educational institutions, and companies on developing AI competency frameworks, ethical standards, and training pathways. We also support career development for Quantity Surveyors by offering skills audits, workforce planning, and strategic guidance on digital upskilling.",
+      icon: ChartBar,
     },
     {
-      title: "Process Automation",
-      description: "Streamline workflows and reduce manual tasks with intelligent automation solutions customized for QS needs.",
-      icon: Cog,
-    },
-    {
-      title: "Integration Services",
-      description: "Connect AI4QS with your existing tools and software for a unified, efficient workflow ecosystem.",
-      icon: Zap,
-    },
-    {
-      title: "Data Security & Compliance",
-      description: "Enterprise-grade security and compliance features to ensure your sensitive project data remains protected.",
+      title: "Consultative Support for Organisations",
+      description: "We work with construction and real estate organisations to integrate AI-driven solutions into cost management, project forecasting, lifecycle costing, and commercial risk management. Our consultative support ensures teams adopt AI responsibly, efficiently, and strategically to unlock long-term value.",
       icon: Shield,
-    },
-    {
-      title: "BIM Data Extraction",
-      description: "Seamlessly extract and analyze data from Building Information Models to inform your quantity surveying.",
-      icon: Layers,
-    },
-    {
-      title: "Historical Data Analysis",
-      description: "Leverage past project data to improve future estimations and identify optimization opportunities.",
-      icon: Database,
     }
   ];
 
@@ -100,7 +98,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              Our Solutions
+            Our Initiative
             </div>
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6">
               AI-Powered Services for<br />Modern Quantity Surveyors
@@ -117,25 +115,24 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Our Core Services
-            </h2>
+            Project Phases            </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Powerful AI tools designed specifically for quantity surveying professionals
+              Our comprehensive approach to integrating AI in Quantity Surveying
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
-            {featuredServices.map((service) => (
-              <Card key={service.title} className="overflow-hidden border-gray-200 h-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+            {projectPhases.map((phase) => (
+              <Card key={phase.title} className="overflow-hidden border-gray-200 h-full">
                 <CardContent className="p-0">
-                  <div className={`p-6 bg-gradient-to-br ${service.color}`}>
-                    <service.icon className={`h-10 w-10 ${service.iconColor} mb-4`} />
-                    <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
+                  <div className={`p-6 bg-gradient-to-br ${phase.color}`}>
+                    <phase.icon className={`h-10 w-10 ${phase.iconColor} mb-4`} />
+                    <h3 className="text-xl font-bold text-gray-900">{phase.title}</h3>
                   </div>
                   <div className="p-6">
-                    <p className="text-gray-600 mb-6">{service.description}</p>
+                    <p className="text-gray-600 mb-6">{phase.description}</p>
                     <ul className="space-y-2">
-                      {service.features.map((feature) => (
+                      {phase.features.map((feature) => (
                         <li key={feature} className="flex items-start">
                           <span className="text-primary mr-2 text-lg">•</span>
                           <span className="text-sm text-gray-700">{feature}</span>
@@ -155,14 +152,14 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Additional Services
+              Our Services and Support
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Complementary solutions to enhance your quantity surveying workflow
+              Comprehensive support solutions to advance AI adoption in Quantity Surveying
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {additionalServices.map((service) => (
               <div
                 key={service.title}
@@ -180,45 +177,7 @@ const Services = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              How We Work With You
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our approach to implementing AI solutions for your quantity surveying practice
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="relative">
-              <div className="absolute top-0 left-6 h-full w-px bg-gray-200 z-0 md:hidden"></div>
-              <div className="relative z-10 flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mb-4">1</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Consultation & Analysis</h3>
-                <p className="text-gray-600 text-center">We begin by understanding your specific needs, challenges, and workflows through a comprehensive consultation.</p>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute top-0 left-6 h-full w-px bg-gray-200 z-0 md:hidden"></div>
-              <div className="relative z-10 flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mb-4">2</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Custom Implementation</h3>
-                <p className="text-gray-600 text-center">Our team tailors our AI solutions to integrate seamlessly with your existing systems and processes.</p>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute top-0 left-6 h-full w-px bg-gray-200 z-0 md:hidden"></div>
-              <div className="relative z-10 flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mb-4">3</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Training & Support</h3>
-                <p className="text-gray-600 text-center">We provide comprehensive training and ongoing support to ensure you get maximum value from our solutions.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       {/* CTA Section */}
       <section className="py-16 bg-primary bg-gradient-to-br from-primary to-primary-deep relative overflow-hidden">

@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import { Card, CardContent } from '@/components/ui/card';
+import AI4QS from '../assets/images/AI4QSIMG.png';
 
 const Index = () => {
   const features = [
@@ -28,29 +29,6 @@ const Index = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      quote: "AI4QS has transformed how we approach quantity surveying. The AI-powered estimations have reduced our workload by 35% while improving accuracy.",
-      author: "Sarah Johnson",
-      position: "Senior Quantity Surveyor",
-      company: "Global Construction Partners",
-      image: "https://randomuser.me/api/portraits/women/32.jpg",
-    },
-    {
-      quote: "The data analytics capabilities of AI4QS have given us insights we never had before. We're making better decisions faster than ever.",
-      author: "Michael Chen",
-      position: "Project Director",
-      company: "Eastwood Development",
-      image: "https://randomuser.me/api/portraits/men/54.jpg",
-    },
-    {
-      quote: "Implementation was seamless and the ROI was immediate. The automation tools alone paid for the investment within 2 months.",
-      author: "Emma Rodriguez",
-      position: "Chief Operations Officer",
-      company: "Rodriguez & Associates",
-      image: "https://randomuser.me/api/portraits/women/68.jpg",
-    },
-  ];
 
   const processSteps = [
     {
@@ -99,8 +77,7 @@ const Index = () => {
                 </h1>
               </div>
               <p className="text-xl text-gray-600 max-w-2xl">
-                Empower your quantity surveying practice with cutting-edge AI solutions for more accurate estimations, efficient workflows, and data-driven insights.
-              </p>
+              Driving Innovation in Quantity Surveying practice and education with Artificial Intelligence              </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="shadow-lg group">
                   <Link to="/services" className="flex items-center gap-2">
@@ -108,12 +85,12 @@ const Index = () => {
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-gray-300">
+                {/* <Button size="lg" variant="outline" className="border-gray-300">
                   <Link to="/contact">Book a Demo</Link>
-                </Button>
+                </Button> */}
               </div>
               <div className="flex items-center gap-3 text-sm text-gray-500">
-                <div className="flex -space-x-2">
+                {/* <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="h-8 w-8 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center overflow-hidden">
                       <img 
@@ -123,8 +100,7 @@ const Index = () => {
                       />
                     </div>
                   ))}
-                </div>
-                <span>Trusted by <span className="font-medium text-gray-900">1,000+</span> professionals</span>
+                </div> */}
               </div>
             </div>
             <div className="hidden lg:block lg:w-1/2 mt-12 lg:mt-0">
@@ -133,14 +109,11 @@ const Index = () => {
                 <div className="absolute -right-4 -bottom-4 h-72 w-72 bg-violet-500/10 rounded-lg"></div>
                 <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border">
                   <img 
-                    src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200&h=900" 
+                    src={AI4QS}
                     alt="AI-powered quantity surveying" 
                     className="w-full h-96 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-6">
-                    <h3 className="text-white text-xl font-semibold">AI-powered analysis in action</h3>
-                    <p className="text-white/80 text-sm">Detailed cost estimations in minutes, not days</p>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -149,7 +122,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="relative py-12 border-y border-gray-200 bg-white/80 backdrop-blur-sm">
+      {/* <section className="relative py-12 border-y border-gray-200 bg-white/80 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -170,7 +143,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Section */}
       <section className="py-20 bg-white">
@@ -201,7 +174,7 @@ const Index = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -234,10 +207,10 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -274,10 +247,10 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Companies */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-gray-600 mb-10">Trusted by leading construction and surveying firms</p>
           <div className="flex flex-wrap justify-center gap-x-12 gap-y-8">
@@ -289,7 +262,7 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-primary bg-gradient-to-br from-primary to-primary-deep relative overflow-hidden">
@@ -306,8 +279,7 @@ const Index = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
-              Ready to transform your quantity surveying practice?
-            </h2>
+            Ready to transform your quantity surveying practice and education?            </h2>
             <p className="mt-4 text-xl text-white/90 max-w-2xl mx-auto">
               Join the hundreds of professionals already leveraging AI to streamline their workflows and improve accuracy.
             </p>

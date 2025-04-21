@@ -25,11 +25,12 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
     { name: 'About', path: '/about' },
-    { name: 'Case Studies', path: '/case-studies' },
+    { name: 'Projects', path: '/services' },
+    // { name: 'Case Studies', path: '/case-studies' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
+    {name:"Events",path:"/event"},
   ];
 
   return (
@@ -44,7 +45,7 @@ const Navbar = () => {
                 <img 
                   src={companyLogo} 
                   alt="AI4QS Logo" 
-                  className="w-16 h-12 object-contain rounded-md  transition-all duration-300" 
+                  className="w-30 h-12 object-contain rounded-md pt-4  transition-all duration-300" 
                 />
               </div>
             </Link>
@@ -74,9 +75,9 @@ const Navbar = () => {
                 </Link>
               );
             })}
-            <Button size="sm" className="ml-3 shadow-sm">
+            {/* <Button size="sm" className="ml-3 shadow-sm">
               Get Started
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Navigation Button */}
@@ -118,9 +119,9 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <div className="pt-2 pb-1">
+          {/* <div className="pt-2 pb-1">
             <Button className="w-full shadow-sm">Get Started</Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

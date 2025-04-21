@@ -83,8 +83,9 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-xl text-gray-600">
-              Have questions about AI4QS? We're here to help you implement AI solutions for your quantity surveying practice.
-            </p>
+            Have questions about AI4QS? We're here to support your journ
+            ey into AI 
+            implementation for Quantity Surveying practice and education.            </p>
           </div>
         </div>
       </section>
@@ -346,20 +347,20 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                question: "How quickly can AI4QS be implemented?",
-                answer: "Implementation times vary based on your organization's size and needs. Typically, our core solutions can be implemented within 2-4 weeks, with full integration taking 1-3 months."
+                question: "What is AI4QS and who is it for?",
+                answer: "AI4QS is an initiative dedicated to advancing AI integration in Quantity Surveying practice and education. It is designed for QS professionals, educators, students, and organisations seeking to future-proof their skills and services in the digital age."
               },
               {
-                question: "Do you offer custom solutions?",
-                answer: "Yes, we specialize in creating tailored AI solutions that address your specific quantity surveying challenges and integrate with your existing workflows and systems."
+                question: "Can AI4QS help universities or training providers with curriculum development?",
+                answer: "Yes! AI4QS supports universities and training providers by offering insights, frameworks, and guidance for embedding AI competencies into QS programmes through short courses, CPD modules, and tailored training support."
               },
               {
-                question: "What kind of training do you provide?",
-                answer: "We offer comprehensive training programs including online courses, live workshops, and one-on-one sessions to ensure your team can maximize the value of our AI solutions."
+                question: "What services does AI4QS offer to companies and practitioners?",
+                answer: "We offer research insights, training recommendations, CPD programmes, and advisory services to help companies, professionals, and project teams adopt AI solutions for cost management, project controls, risk analysis, and data-driven decision-making."
               },
               {
-                question: "How secure is my data with AI4QS?",
-                answer: "We implement enterprise-grade security measures including encryption, secure authentication, and regular security audits. All data is processed in compliance with relevant data protection regulations."
+                question: "How can I get involved with AI4QS?",
+                answer: "You can join our knowledge exchange events, access our toolkits and research findings, attend AI4QS workshops, or collaborate with us on pilot projects aimed at AI adoption in QS practice and education. Simply contact us to learn more!"
               }
             ].map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-xl border border-gray-200">

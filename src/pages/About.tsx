@@ -1,55 +1,103 @@
 import { ArrowRight, Award, BarChart2, CheckCircle, ChevronRight, Globe, Lightbulb, Target, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import Drsaka from '../assets/images/Dr-saka.jpg';
+import DrKudirat from '../assets/images/Dr-Kudirat.jpg';
+import DrAfolabi from '../assets/images/Dr-Afolabi.jpg';
+import DrKaren from '../assets/images/Dr-Karen.jpg';
+import Olayinka from '../assets/images/Olayinka.jpg';
+import DrSitsofe from '../assets/images/Dr-sitsofe.jpg';
+import DrAravinda from '../assets/images/Dr-Aravinda.jpg';
 
 const About = () => {
   const teamMembers = [
     {
-      name: "Dr. Michael Chen",
-      position: "Founder & CEO",
-      bio: "Former professor of Computer Science with expertise in machine learning and AI applications in construction.",
-      image: "https://randomuser.me/api/portraits/men/42.jpg"
+      name: "Dr Abdullahi Saka",
+      position: "Reader",
+      bio: "Researcher in sustainable digital construction and digital enterprise with expertise QS in applied AI and system development. His research philosophy is to improve the status quo and provide practical solutions to the problems of productivity, safety, and sustainability in the construction sector and beyond",
+      image: Drsaka
+    },
+    { 
+      name: "Dr Kudirat Ayinla",
+      position: "Lecturer",
+      bio: "Programme Lead for BSc (Hons) in Commercial Management and Quantity Surveying (Loughborough University). Her research mission is to promote process efficiency and performance in the industry through sustainable means and the use of digital technology for a better-built environment.",
+      image: DrKudirat
     },
     {
-      name: "Sarah Johnson",
-      position: "Chief Operating Officer",
-      bio: "Chartered quantity surveyor with over 15 years of experience in major infrastructure projects.",
-      image: "https://randomuser.me/api/portraits/women/68.jpg"
+      name: "Dr Afolabi Dania",
+      position: "Senior Lecturer",
+      bio: "Researcher in sustainability in the built environment, construction in emerging economies and innovation in the built environment. With expertise in module and programme development & enhancement, engaging with PSRBs and industry practitioners to develop modules and programmes.",
+      image: DrAfolabi
     },
     {
-      name: "David Rodriguez",
-      position: "Chief Technology Officer",
-      bio: "AI researcher and engineer with background in computer vision and predictive analytics.",
-      image: "https://randomuser.me/api/portraits/men/29.jpg"
+      name: "Dr Karen Blay",
+      position: "Senior Lecturer",
+      bio: "Her research seeks to advance Information Resilience and Digital Inclusion across the Digital Built Environment (DBE). Research Lead for the virtual Centre for Information Resilience and Digital Inclusion (CIRDI), Loughborough University.",
+      image: DrKaren
     },
     {
-      name: "Emma Williams",
-      position: "Head of Customer Success",
-      bio: "Dedicated to ensuring clients achieve maximum value through AI4QS solutions.",
-      image: "https://randomuser.me/api/portraits/women/33.jpg"
+      name: "Olayinka Omoboye",
+      position: "Senior Lecturer",
+      bio: "Course Leader for Quantity Surveying and Commercial Management (University of Westminster). With expertise in quantity surveying and construction management, his research aims to advance development in the built environment.",
+      image: Olayinka
+    },
+    {
+      name: "Dr Sitsofe Yevu",
+      position: "Lecturer",
+      bio: "His research cover applying digital technologies such as building information modelling (BIM), digital twins, and artificial intelligence to advance sustainable construction processes, construction circular economy, low-carbon buildings, and off-site construction.",
+      image: DrSitsofe
+    },
+    {
+      name: "Dr Aravinda Adikari",
+      position: "Senior Lecturer",
+      bio: "Quantity Surveying Apprentice Course Leader (University of Westminster) with research expertise in BIM, digital construction and construction management.",
+      image: DrAravinda
     }
+    
   ];
 
   const values = [
     {
       icon: Award,
-      title: "Excellence",
-      description: "We are committed to delivering excellence in every aspect of our work, from customer service to technical innovation."
+      title: "Innovation",
+      description: "We are committed to pioneering new ways of thinking, working, and learning by embracing the transformative potential of Artificial Intelligence in Quantity Surveying and the built environment."
     },
     {
       icon: CheckCircle,
       title: "Integrity",
-      description: "We operate with transparency and honesty, ensuring our AI solutions are explainable and trustworthy."
+      description: "We uphold the highest standards of ethics, transparency, and trust as we integrate AI into professional practice and education, ensuring that technology serves people and the public good."
     },
     {
       icon: Users,
       title: "Collaboration",
-      description: "We believe in the power of collaboration between humans and AI, and between our team and our clients."
+      description: "We believe progress happens through partnerships, between academia, industry, professional bodies, and future generations, working together to shape an AI-enabled, human-centred future for Quantity Surveying."
     },
     {
       icon: Globe,
-      title: "Sustainability",
-      description: "We're committed to developing solutions that contribute to more efficient, sustainable construction practices."
+      title: "Future-Readiness",
+      description: "We are dedicated to preparing Quantity Surveying professionals and graduates to thrive in an increasingly digital, data-driven world, fostering lifelong learning, adaptability, and critical leadership"}
+  ];
+
+  const objectives = [
+    {
+      title: "Innovation in Practice",
+      description: "Champion the use of AI technologies to enhance QS workflows, decision-making, and project outcomes - redefining the way cost, risk, and value are managed."
+    },
+    {
+      title: "Transformation in Education",
+      description: "Embed AI awareness, tools, and competencies into QS curricula to prepare future-ready professionals equipped for a digital-first industry."
+    },
+    {
+      title: "Collaboration & Knowledge Exchange",
+      description: "Foster partnerships between academia, industry, and professional bodies to align educational frameworks with real-world applications and needs."
+    },
+    {
+      title: "Ethical & Standards-Led Development",
+      description: "Promote the responsible and ethical adoption of AI in QS, guided by clear professional standards and inclusive practices."
+    },
+    {
+      title: "Capacity Building & Skills Development",
+      description: "Enable upskilling through training, certification pathways, and CPD for both students and practitioners navigating AI integration."
     }
   ];
 
@@ -79,23 +127,19 @@ const About = () => {
             />
           </div>
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900">A new era in quantity surveying</h2>
+            <h2 className="text-3xl font-bold text-gray-900">AI for Quantity Surveying Practice (AI4QS)</h2>
             <p className="text-lg text-gray-600">
-              AI4QS was founded in 2020 by a team of quantity surveyors, data scientists, and construction technologists 
-              who recognized the transformative potential of artificial intelligence in the construction industry.
+            At AI4QS, we are reimagining the future of Quantity Surveying through the transformative lens of Artificial Intelligence.
+AI4QS is a pioneering initiative led by researchers from the University of Westminster and Loughborough University, originating from the ongoing AI Competencies in Construction Project funded by UK Research and Innovation (UKRI) and hosted at the School of Applied Management, University of Westminster
+
             </p>
             <p className="text-lg text-gray-600">
-              We've grown from a small startup to an industry leader, serving clients across the UK, Europe, and North America. 
-              Our AI-powered solutions have helped hundreds of quantity surveying professionals modernize their practices and 
-              deliver more accurate, efficient services to their clients.
+            Our mission is to understand, shape, and advance the role of AI in Quantity Surveying practice and education. We believe Artificial Intelligence is not simply a tool, it is a transformative force reshaping how projects are costed, managed, delivered, and sustained. As custodians of critical project, financial, and sustainability data, Quantity Surveyors must evolve beyond traditional roles to become future-ready leaders in an increasingly digital and data-driven built environment.
+            <br />
+<span className='font-bold'>{""}AI4QS is not just about technology.</span> <br />
+It's about empowering the Quantity Surveying profession to lead confidently, think critically, and unlock new forms of value in the data age.
+
             </p>
-            <div className="pt-4">
-              <Button asChild>
-                <Link to="/case-studies" className="inline-flex items-center">
-                  See Our Success Stories <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
           </div>
         </div>
 
@@ -148,6 +192,30 @@ const About = () => {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* Objectives */}
+        <div className="mb-24">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+              Our Strategic Focus
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Objectives</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              The key areas where we're driving change in the quantity surveying profession
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {objectives.map((objective, index) => (
+              <div key={objective.title} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-6">
+                  <span className="font-bold">{index + 1}</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{objective.title}</h3>
+                <p className="text-gray-600">{objective.description}</p>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -206,46 +274,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="bg-primary/5 py-12 px-8 rounded-2xl mb-24">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Impact</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              The difference we've made in the quantity surveying industry
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="flex items-center justify-center">
-                <span className="text-4xl font-bold text-primary">500+</span>
-                <BarChart2 className="h-5 w-5 text-primary ml-1" />
-              </div>
-              <p className="text-sm text-gray-600 mt-2">Projects Completed</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center">
-                <span className="text-4xl font-bold text-primary">98%</span>
-                <BarChart2 className="h-5 w-5 text-primary ml-1" />
-              </div>
-              <p className="text-sm text-gray-600 mt-2">Client Satisfaction</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center">
-                <span className="text-4xl font-bold text-primary">£75M</span>
-                <BarChart2 className="h-5 w-5 text-primary ml-1" />
-              </div>
-              <p className="text-sm text-gray-600 mt-2">Client Savings</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center">
-                <span className="text-4xl font-bold text-primary">40%</span>
-                <BarChart2 className="h-5 w-5 text-primary ml-1" />
-              </div>
-              <p className="text-sm text-gray-600 mt-2">Efficiency Improvement</p>
-            </div>
-          </div>
-        </div>
-
+      
         {/* CTA */}
         <div className="text-center bg-primary bg-gradient-to-br from-primary to-primary-deep rounded-2xl p-12 relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
@@ -262,9 +291,9 @@ const About = () => {
             <h2 className="text-3xl font-bold text-white mb-4">
               Join Us in Shaping the Future of Quantity Surveying
             </h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
+            {/* <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
               Experience the power of AI in transforming your quantity surveying practices
-            </p>
+            </p> */}
             <Button size="lg" variant="secondary" className="bg-white hover:bg-gray-50 text-primary" asChild>
               <Link to="/contact">Contact Our Team</Link>
             </Button>
