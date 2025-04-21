@@ -1,13 +1,13 @@
 import { ArrowRight, Award, BarChart2, CheckCircle, ChevronRight, Globe, Lightbulb, Target, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import Drsaka from '../assets/images/Dr-saka.jpg';
-import DrKudirat from '../assets/images/Dr-Kudirat.jpg';
-import DrAfolabi from '../assets/images/Dr-Afolabi.jpg';
-import DrKaren from '../assets/images/Dr-Karen.jpg';
-import Olayinka from '../assets/images/Olayinka.jpg';
-import DrSitsofe from '../assets/images/Dr-sitsofe.jpg';
-import DrAravinda from '../assets/images/Dr-Aravinda.jpg';
+import Drsaka from '../Assets/images/Dr-saka.jpg';
+import DrKudirat from '../Assets/images/Dr-Kudirat.jpg';
+import DrAfolabi from '../Assets/images/Dr-Afolabi.jpg';
+import DrKaren from '../Assets/images/Dr-Karen.jpg';
+import Olayinka from '../Assets/images/Olayinka.jpg';
+import DrSitsofe from '../Assets/images/Dr-sitsofe.jpg';
+import DrAravinda from '../Assets/images/Dr-Aravinda.jpg';
 
 const About = () => {
   const teamMembers = [
