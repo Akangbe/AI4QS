@@ -29,7 +29,7 @@ const Blog = () => {
     id: 0,
     title: "Predictive Analytics: The Future of Construction Cost Management",
     excerpt: "How AI-powered predictive models are helping quantity surveyors forecast costs with unprecedented accuracy, enabling better decision-making and risk management throughout the project lifecycle.",
-    author: "Dr. Abdullahi Saka",
+    author: "Dr. Afolabi Dania",
     date: "April 14, 2025",
     readTime: "15 min read",
     category: "Featured",
